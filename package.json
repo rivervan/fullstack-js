@@ -1,0 +1,40 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "Project-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && npm run jasmine",
+    "lint": "eslint",
+    "prettier": "prettier --config prettierrc 'src/**/*.js' --write",
+    "build": "npx tsc",
+    "jasmine": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivervan/fullstack-js.git"
+  },
+  "keywords": [
+    "images",
+    "resize"
+  ],
+  "author": "Ivan Rivera-Islas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rivervan/fullstack-js/issues"
+  },
+  "homepage": "https://github.com/rivervan/fullstack-js#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.7.1",
+    "@types/node": "^15.0.2",
+    "eslint": "^7.26.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "prettier": "^2.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jasmine": "^3.7.0"
+  }
+}
