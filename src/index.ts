@@ -1,7 +1,17 @@
+import express from 'express';
+import {writer} from "./ts/app";
 
 
-const myName = 'your name';
+const app = express();
+const port = 3000;
 
-const hello = (userName: string): string => `hello ${userName}`;
+app.get('/api', (req, res) => {
+    let msg: string = 'Hello, world!';
+    writer().catch((err) => {msg = err.message})
+    res.send(msg);
+});
 
-console.log(hello(myName));
+
+app.listen(port, ()=> {
+    console.log(`server started at localhost:${port}`)
+});
